@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="home.css">
+
+
+
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-default navbar-top">
+	  <div class="container">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#">Is It 5 Yet</a>
+		</div>
+	  </div>
+	</nav>
+	<!-- END NAVBAR -->
+
+
+
+
+
+
+	<div class="container">
+		<div class="content">
+			<div class="is-it-5-button" id="isIt5Button">
+				<button id="isIt5" type="button" class="btn btn-warning btn-main" onclick="isIt5()">Is it 5:00 yet?</button>
+				<h2>Click the giant button to find out.</h2>
+			</div>
+
+
+			<div class="not-yet" id="notYet">
+				<h1>Nope :/</h1>
+				<h2>But... maybe now?</h2>
+				<button type="button" class="btn btn-warning" onclick="reset()">Try again!</button>
+			</div>
+
+
+			<div class="yes" id="yes">
+				<h1>YEEEEES!!!</h1>
+				<h2>Not convinced?</h2>
+				<button type="button" class="btn btn-warning" onclick="reset()">Make sure it's 5:00</button>
+			</div>
+
+
+			<div class="SuperShare1000">
+				<script type="text/javascript" id ="ssShareWidgetScript" src="http://supershare1000.com/ssSampleScript.js"></script>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+	<script src="home.js"></script>
+</html>
