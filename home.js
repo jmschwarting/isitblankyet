@@ -13,7 +13,7 @@ function isIt5 () {
 		document.body.style.background = "url('https://www.fest300.com/system/images/W1siZiIsIjIwMTQvMDQvMTgvMDUvMTcvMjkvNTg1L0hFUk9fSUJJWkFfQ0xPU0lOR19QQVJUSUVTX1ByaXZpbGVnZS5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTAwIyJdXQ/HERO_IBIZA_CLOSING_PARTIES_Privilege.jpg') no-repeat scroll";
 		console.log("It is!!!")
 	}
-}
+};
 
 
 function reset () {
@@ -21,4 +21,29 @@ function reset () {
 	document.getElementById("notYet").style.display = "none";
 	document.getElementById("isIt5Button").style.display = "block";
 	document.body.style.background = "url('')";
-}
+};
+
+// NOTIFICATIONS
+var currentSeconds = new Date().getUTCSeconds();
+
+setInterval(function(){
+	if (currentSeconds == 0) {
+		if (new Date().getHours() == 17 && Notification.permission !== 'denied') {
+			var notification = new Notification("It's 5pm!", {
+				body: 'What are you still doing here?',
+				icon: 'http://vignette4.wikia.nocookie.net/roblox-apocalypse-rising/images/0/05/Cat.png/revision/latest?cb=20130815092838'
+			});
+		}
+	}
+	currentSeconds = new Date().getUTCSeconds();
+}, 1000);
+
+(function () {
+  if (!("Notification" in window)) { console.log("This browser does not support desktop notification"); }
+  else if (Notification.permission === "granted") {
+    var notification = new Notification("Hi there!");
+  }
+  else if (Notification.permission !== 'denied' || Notification.permission === "default") {
+    Notification.requestPermission();
+  }
+})()
