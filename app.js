@@ -21,3 +21,7 @@ $('#5').click(function() {
 $('#6').click(function() {
     window.open("https://one.npr.org/?sharedMediaId=513311127:513326948","_blank")
 });
+
+$('#7').click(function() {
+    window.open("https://one.npr.org/?sharedMediaId=495815443:496081302","_blank")
+});
