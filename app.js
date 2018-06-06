@@ -17,3 +17,7 @@ $('#4').click(function() {
 $('#5').click(function() {
     window.open("https://youtu.be/qvHhhIfu7Lo","_blank")
 });
+
+$('#6').click(function() {
+    window.open("https://one.npr.org/?sharedMediaId=513311127:513326948","_blank")
+});
