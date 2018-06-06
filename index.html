@@ -1,67 +1,160 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- BOOTSTRAP -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="home.css">
+<html lang="en" dir="ltr">
+<link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="nav">
+
+    </div>
+
+    <div class="jumbotron">
+      <div class="headliner">
+        <h1>Startup Content</h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="card" id="1">
+        <div class="details">
+          <h1>Crash and Burn: How Yik Yak, Fab.com, and Vine Failed to Keep the Momentum Going</h1>
+          <p class="url">medium.com</p>
+          <div class="tags">
+            <div class="tag">
+              <p>failure</p>
+            </div>
+            <div class="tag">
+              <p>idea</p>
+            </div>
+            <div class="tag">
+              <p>postmortem</p>
+            </div>
+          </div>
+        </div>
+        <div class="rating">
+          <h1 class="rating-h1">4.5</h1>
+          <div class="stars">
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+            <!-- <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon> -->
+          </div>
+        </div>
+      </div>
 
 
 
-</head>
-<body>
-	<!-- NAVBAR -->
-	<nav class="navbar navbar-default navbar-top">
-	  <div class="container">
-		<div class="navbar-header">
-		  <a class="navbar-brand" href="#">Is It 5 Yet</a>
-		</div>
-	  </div>
-	</nav>
-	<!-- END NAVBAR -->
+      <div class="card" id="3">
+        <div class="details">
+          <h1>How to Get Startup Ideas</h1>
+          <p class="url">paulgraham.com</p>
+          <div class="tags">
+            <div class="tag">
+              <p>idea</p>
+            </div>
+          </div>
+        </div>
+        <div class="rating">
+          <h1 class="rating-h1">4.7</h1>
+          <div class="stars">
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+            <!-- <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon> -->
+          </div>
+        </div>
+      </div>
 
 
 
+      <div class="card" id="2">
+        <div class="details">
+          <h1>Burton Snowboards: Jake Carpenter</h1>
+          <p class="url"><ion-icon name="microphone"></ion-icon> npr.org</p>
+          <div class="tags">
+            <div class="tag">
+              <p>idea</p>
+            </div>
+            <div class="tag">
+              <p>grit</p>
+            </div>
+            <div class="tag">
+              <p>marketing</p>
+            </div>
+          </div>
+        </div>
+        <div class="rating">
+          <h1 class="rating-h1">4.3</h1>
+          <div class="stars">
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
 
 
-
-	<div class="container">
-		<div class="content">
-			<div class="is-it-5-button" id="isIt5Button">
-				<button id="isIt5" type="button" class="btn btn-warning btn-main" onclick="isIt5()">Is it 5:00 yet?</button>
-				<h2>Click the giant button to find out.</h2>
-			</div>
-
-
-			<div class="not-yet" id="notYet">
-				<h1>Nope :/</h1>
-				<h2>But... maybe now?</h2>
-				<button type="button" class="btn btn-warning" onclick="reset()">Try again!</button>
-			</div>
-
-
-			<div class="yes" id="yes">
-				<h1>YEEEEES!!!</h1>
-				<h2>Not convinced?</h2>
-				<button type="button" class="btn btn-warning" onclick="reset()">Make sure it's 5:00</button>
-			</div>
-
-
-			<div class="SuperShare1000">
-				<script type="text/javascript" id ="ssShareWidgetScript" src="http://supershare1000.com/ssSampleScript.js"></script>
-			</div>
-		</div>
-	</div>
+      <div class="card" id="4">
+        <div class="details">
+          <h1>7 Qualities You’ll Never Find in Millionaires</h1>
+          <p class="url">medium.com</p>
+          <div class="tags">
+            <div class="tag">
+              <p>life</p>
+            </div>
+            <div class="tag">
+              <p>false</p>
+            </div>
+            <div class="tag">
+              <p>BS</p>
+            </div>
+            <div class="tag">
+              <p>self promotion</p>
+            </div>
+          </div>
+        </div>
+        <div class="rating">
+          <h1 class="rating-h1">1.0</h1>
+          <div class="stars">
+            <ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
 
 
+      <div class="card" id="5">
+        <div class="details">
+          <h1>Ron Conway at Startup School SV 2014</h1>
+          <p class="url"><ion-icon name="play"></ion-icon> youtube.com</p>
+          <div class="tags">
+            <div class="tag">
+              <p>idea</p>
+            </div>
+            <div class="tag">
+              <p>fundraising</p>
+            </div>
+          </div>
+        </div>
+        <div class="rating">
+          <h1 class="rating-h1">4.2</h1>
+          <div class="stars">
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
 
 
-
-</body>
-	<script src="home.js"></script>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+  </body>
 </html>

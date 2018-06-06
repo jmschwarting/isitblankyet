@@ -1,17 +1,90 @@
-h3  {
-  margin-top: 0px;
+body {
+  font-family: 'sofia-pro', sans-serif;
+  margin: 0;
+  color: #222;
 }
 
-.input {
-  margin-top: 100px;
-  width: 500px;
+.border {
+  height: 1px;
+  background: linear-gradient(to right, purple, lightblue);
+}
+
+.jumbotron {
+    border-bottom: 1px solid #eee;
+}
+
+.headliner {
+  padding: 25px;
+  text-align: center;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  background: #eee;
-  padding: 10px;
+  line-height: 1.2;
+  /* color: white; */
 }
 
-.input textarea {
-  width: 490px;
-  font-size: 8px;
+.headliner p {
+  font-family: serif;
+  font-size: 18px;
+}
+
+.content {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.details h1 {
+  font-size: 20px;
+}
+
+.url {
+  color: gray;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.details {
+  width: 75%;
+}
+
+.rating {
+  width: 25%;
+  text-align: center;
+  align-self: center;
+}
+
+.rating-h1 {
+}
+
+.stars {
+  color: gold;
+}
+
+.tags {
+  display: flex;
+}
+
+.tag {
+  font-size: 14px;
+  border-radius: 1px solid gray;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.tag p {
+  margin: 0;
 }
