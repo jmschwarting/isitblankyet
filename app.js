@@ -29,3 +29,7 @@ $('#7').click(function() {
 $('#8').click(function() {
     window.open("https://www.npr.org/player/embed/594357259/594359562","_blank")
 });
+
+$('#9').click(function() {
+    window.open("https://medium.com/@brett1211/postmortem-of-a-venture-backed-startup-72c6f8bec7df","_blank")
+});
