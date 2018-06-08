@@ -1,3 +1,12 @@
+$('#81').click(function() {
+  var x = document.getElementById('82');
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+});
+
 $('#1').click(function() {
     window.open("https://medium.com/s/story/crash-and-burn-how-yik-yak-fab-com-and-vine-failed-to-keep-the-momentum-going-a0f694b17053","_blank")
 });
@@ -26,9 +35,9 @@ $('#7').click(function() {
     window.open("https://one.npr.org/?sharedMediaId=495815443:496081302","_blank")
 });
 
-$('#8').click(function() {
-    window.open("https://www.npr.org/player/embed/594357259/594359562","_blank")
-});
+// $('#8').click(function() {
+//     window.open("https://www.npr.org/player/embed/594357259/594359562","_blank")
+// });
 
 $('#9').click(function() {
     window.open("https://medium.com/@brett1211/postmortem-of-a-venture-backed-startup-72c6f8bec7df","_blank")
