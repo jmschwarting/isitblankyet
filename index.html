@@ -1,315 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<link rel="stylesheet" type="text/css" href="style.css">
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <div class="nav">
-
-    </div>
-
-    <div class="jumbotron">
-      <div class="headliner">
-        <h1>Startup Content</h1>
-      </div>
-    </div>
     <div class="content">
-    <div class="card section-header">
-      <h5>TODAY</h5>
+      <div class="form-div">
+        <form">
+          <input type="text" name="url" value="" autocomplete="off" id="form-input" placeholder="shopify url">
+          <br>
+          <!-- <input type="submit" value="Get inventory" onclick="getInventory()"> -->
+          <button type="submit" name="button" onclick="getInventory()">GET INVENTORY</button>
+        </form>
+      </div>
+      <div class="results" id="results">
+        <div class="product">
+          <div class="image">
+            <img id="product-image" src="" alt="">
+          </div>
+          <h3 id="product-name"></h3>
+        </div>
+        <hr>
+        <table id="results-table">
+          <tr>
+            <th>Variant</th>
+            <th>Inventory available</th>
+            <th>Price</th>
+          </tr>
+        </table>
+      </div>
     </div>
-
-
-      <div class="card" id="9">
-        <div class="details">
-          <h1>Postmortem of a Venture-backed Startup | Lessons Learned from the rise and fall of @Sonar</h1>
-          <p class="url">medium.com</p>
-          <div class="tags">
-            <div class="tag">
-              <p>failure</p>
-            </div>
-            <div class="tag">
-              <p>postmortem</p>
-            </div>
-            <div class="tag">
-              <p>focus</p>
-            </div>
-          </div>
-        </div>
-        <div class="rating">
-          <h1 class="rating-h1">3.5</h1>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="card" id="8">
-        <div class="details">
-          <h1>LÄRABAR: Lara Merriken</h1>
-          <p class="url"><ion-icon name="microphone"></ion-icon> npr.org</p>
-          <div class="tags">
-            <div class="tag">
-              <p>idea</p>
-            </div>
-            <div class="tag">
-              <p>food</p>
-            </div>
-            <div class="tag">
-              <p>manufacturing</p>
-            </div>
-            <div class="tag">
-              <p>bootstrapping</p>
-            </div>
-            <div class="tag">
-              <p>sales</p>
-            </div>
-          </div>
-        </div>
-        <div class="rating" id="81">
-          <h1 class="rating-h1">5.0</h1>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
-          </div>
-          <p class="rating-count">2 ratings</p>
-        </div>
-      </div>
-      <div class="review-block" style="display: none;"id="82">
-        <div class="reviews-header">
-          <div class="reviews-title">
-            <h3>Reviews</h3>
-          </div>
-          <div class="reviews-histogram">
-            <div class="review-bar">
-
-            </div>
-          </div>
-        </div>
-        <div class="reviews">
-          <div class="review">
-            <p class="review-info user">Jeff</p>
-            <p class="review-info date">7 Jun 2018</p>
-            <div class="stars">
-              <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
-            </div>
-            <p class="review-content">This podcast was boooooooomb. I love hearing about the struggle to both create the product and sell it. Also really loved hearing timelines (e.g. it took like three years before her first retail account, and she had a real job that whole time).</p>
-          </div>
-          <div class="review">
-            <p class="review-info user">Daniel</p>
-            <p class="review-info date">7 Jun 2018</p>
-            <div class="stars">
-              <ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
-            </div>
-            <p class="review-content">That's not stating the facts. "They failed to articulate the why for their product-market fit." I can't even digest that sentence. It's like it has lactose or something. 0 stars. I hate it. I hate it so much.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card section-header">
-        <h5>PREVIOUS</h5>
-      </div>
-
-      <div class="card" id="7">
-        <div class="details">
-          <h1>Clif Bar: Gary Erickson</h1>
-          <p class="url"><ion-icon name="microphone"></ion-icon> npr.org</p>
-          <div class="tags">
-            <div class="tag">
-              <p>idea</p>
-            </div>
-            <div class="tag">
-              <p>food</p>
-            </div>
-            <div class="tag">
-              <p>manufacturing</p>
-            </div>
-            <div class="tag">
-              <p>bootstrapping</p>
-            </div>
-          </div>
-        </div>
-        <div class="rating">
-          <h1 class="rating-h1">5.0</h1>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card" id="6">
-        <div class="details">
-          <h1>Kate Spade: Kate & Andy Spade</h1>
-          <p class="url"><ion-icon name="microphone"></ion-icon> npr.org</p>
-          <div class="tags">
-            <div class="tag">
-              <p>idea</p>
-            </div>
-            <div class="tag">
-              <p>fashion</p>
-            </div>
-            <div class="tag">
-              <p>manufacturing</p>
-            </div>
-            <div class="tag">
-              <p>design</p>
-            </div>
-            <div class="tag">
-              <p>differentiation</p>
-            </div>
-          </div>
-        </div>
-        <div class="rating">
-          <h1 class="rating-h1">5.0</h1>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="card" id="1">
-        <div class="details">
-          <h1>Crash and Burn: How Yik Yak, Fab.com, and Vine Failed to Keep the Momentum Going</h1>
-          <p class="url">medium.com</p>
-          <div class="tags">
-            <div class="tag">
-              <p>failure</p>
-            </div>
-            <div class="tag">
-              <p>idea</p>
-            </div>
-            <div class="tag">
-              <p>postmortem</p>
-            </div>
-          </div>
-        </div>
-        <div class="rating">
-          <h1 class="rating-h1">4.5</h1>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
-            <!-- <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon> -->
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="card" id="3">
-        <div class="details">
-          <h1>How to Get Startup Ideas</h1>
-          <p class="url">paulgraham.com</p>
-          <div class="tags">
-            <div class="tag">
-              <p>idea</p>
-            </div>
-          </div>
-        </div>
-        <div class="rating">
-          <h1 class="rating-h1">4.7</h1>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
-            <!-- <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon> -->
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="card" id="2">
-        <div class="details">
-          <h1>Burton Snowboards: Jake Carpenter</h1>
-          <p class="url"><ion-icon name="microphone"></ion-icon> npr.org</p>
-          <div class="tags">
-            <div class="tag">
-              <p>idea</p>
-            </div>
-            <div class="tag">
-              <p>grit</p>
-            </div>
-            <div class="tag">
-              <p>marketing</p>
-            </div>
-          </div>
-        </div>
-        <div class="rating">
-          <h1 class="rating-h1">4.3</h1>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card" id="4">
-        <div class="details">
-          <h1>7 Qualities You’ll Never Find in Millionaires</h1>
-          <p class="url">medium.com</p>
-          <div class="tags">
-            <div class="tag">
-              <p>life</p>
-            </div>
-            <div class="tag">
-              <p>false</p>
-            </div>
-            <div class="tag">
-              <p>BS</p>
-            </div>
-            <div class="tag">
-              <p>self promotion</p>
-            </div>
-          </div>
-        </div>
-        <div class="rating">
-          <h1 class="rating-h1">1.0</h1>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card" id="5">
-        <div class="details">
-          <h1>Ron Conway at Startup School SV 2014</h1>
-          <p class="url"><ion-icon name="play"></ion-icon> youtube.com</p>
-          <div class="tags">
-            <div class="tag">
-              <p>idea</p>
-            </div>
-            <div class="tag">
-              <p>fundraising</p>
-            </div>
-          </div>
-        </div>
-        <div class="rating">
-          <h1 class="rating-h1">4.2</h1>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-      crossorigin="anonymous">
-    </script>
-    <script src="app.js"></script>
   </body>
 </html>

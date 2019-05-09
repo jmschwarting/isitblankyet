@@ -1,131 +1,56 @@
 body {
-  font-family: 'sofia-pro', sans-serif;
-  margin: 0;
   color: #222;
 }
 
-.border {
-  height: 1px;
-  background: linear-gradient(to right, purple, lightblue);
+table {
+  width: 100%;
+  margin-bottom: 200px;
 }
 
-.jumbotron {
-    border-bottom: 1px solid #eee;
+th {
+  border-bottom: 1px solid #888;
+  text-align: left;
 }
 
-.headliner {
-  padding: 25px;
-  text-align: center;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.2;
-  /* color: white; */
+td {
+  border-bottom: 1px solid #ccc;
 }
 
-.headliner p {
-  font-family: serif;
-  font-size: 18px;
+h3 {
+  font-family: sans-serif;
+}
+
+#form-input {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #229dff;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.low-inventory {
+  background-color: #ffc0c0;
 }
 
 .content {
-  max-width: 500px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.card {
-  display: flex;
-  border-radius: 5px;
-  padding: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.review-block {
-  padding: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.review-info {
-  color: gray;
-  font-size: 14px;
-  margin: 0;
-}
-
-.review {
-  border-top: 1px solid #eee;
-  padding-top: 16px;
-}
-
-.details h1 {
-  font-size: 20px;
-}
-
-.url {
-  color: gray;
-}
-
-.card:hover {
-  cursor: pointer;
-  background-color: #f9f9f9;
-}
-
-.section-header {
-  color: gray;
-}
-
-.section-header:hover {
-  cursor: default;
-  background-color: white;
-}
-
-.details {
-  width: 75%;
-}
-
-.rating {
-  width: 25%;
-  text-align: center;
-  align-self: center;
-  padding: 15px 0px;
-  border-radius: 5px;
-}
-
-.rating:hover {
-  background-color: white;
-  /* box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2); */
-  /* border: 1px solid #eee; */
-}
-
-.rating-h1 {
-  margin: 0;
-}
-
-.stars {
-  color: gold;
-  margin: 10px 0px 0px 0px;
-}
-
-.rating-count {
-  color: gray;
-  margin: 0;
-  font-size: 14px;
-}
-
-.tags {
-  flex-wrap: wrap;
-}
-
-.tag {
-  display: inline-block;
-  font-size: 14px;
-  border-radius: 1px solid gray;
-  padding: 5px 10px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  background-color: #eee;
-}
-
-.tag p {
-  margin: 0;
+#product-image {
+  max-width: 200px;
 }
