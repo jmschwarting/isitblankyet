@@ -25,8 +25,11 @@ function getInventory() {
 
         const tr = document.createElement('tr')
         tr.classList.add("data-row");
-        if (variant.inventory_quantity<5) {
+        if (variant.inventory_quantity<10) {
           tr.classList.add("low-inventory");
+        };
+        if (variant.inventory_quantity<5) {
+          tr.classList.add("super-low-inventory");
         };
 
         const table = document.getElementById("results-table");

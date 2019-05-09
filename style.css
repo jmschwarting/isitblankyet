@@ -42,7 +42,11 @@ button:hover {
 }
 
 .low-inventory {
-  background-color: #ffc0c0;
+  background-color: #ffdca7;
+}
+
+.super-low-inventory {
+  background-color: #ff9090;
 }
 
 .content {
