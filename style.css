@@ -20,9 +20,13 @@ h3 {
   font-family: sans-serif;
 }
 
+.form-div {
+  background-color: #eee;
+  padding: 20px;
+}
+
 #form-input {
-  margin-top: 20px;
-  width: 100%;
+  width: 97%;
   padding: 10px;
   border-radius: 5px;
   border: 2px solid #229dff;
@@ -35,6 +39,10 @@ button {
   background-color: black;
   color: white;
   border: none;
+}
+
+#downloadImages {
+  background-color: #229dff;
 }
 
 button:hover {
@@ -57,4 +65,21 @@ button:hover {
 
 #product-image {
   max-width: 200px;
+}
+
+.product-image {
+  max-width: 100px;
+}
+
+button:disabled {
+  background-color: lightgray;
+  cursor: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.highlight-text {
+  color: #229dff;
 }

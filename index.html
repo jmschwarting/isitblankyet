@@ -13,16 +13,25 @@
           <input type="text" name="url" value="" autocomplete="off" id="form-input" placeholder="shopify url">
           <br>
           <!-- <input type="submit" value="Get inventory" onclick="getInventory()"> -->
-          <button type="submit" name="button" onclick="getInventory()">GET INVENTORY</button>
+          <button type="submit" name="button" id="runThisTown" onclick="getInventory()">RUN THIS TOWN</button>
         </form>
+        <button type="button" name="button" onClick="window.location.reload();">DO IT AGAIN</button>
       </div>
       <div class="results" id="results">
         <div class="product">
-          <div class="image">
+          <!-- <div class="image">
             <img id="product-image" src="" alt="">
-          </div>
-          <h3 id="product-name"></h3>
+          </div> -->
+          <h3 id="product-name">...</h3>
+          <p class="bold" id="product-price">...</p>
+          <p class="highlight-text" id="10-off-price"></p>
+          <p class="highlight-text" id="15-off-price"></p>
+          <p class="highlight-text" id="20-off-price"></p>
+          <p id="product-options-names"></p>
+          <p class="bold" id="product-options"></p>
         </div>
+        <div class="images" id="results-images"></div>
+        <button type="button" name="button" id="downloadImages" onClick="downloadImages()">DOWNLOAD ALL IMAGES</button>
         <hr>
         <table id="results-table">
           <tr>

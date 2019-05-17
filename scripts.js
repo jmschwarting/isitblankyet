@@ -1,10 +1,8 @@
 function getInventory() {
   var raw_url = document.getElementById("form-input").value
-  console.log(raw_url);
 
   if (raw_url.indexOf('?')>0) {
     var url = raw_url.substr(0, raw_url.indexOf('?')) + ".json";
-    console.log(url);
   }
   else {
     var url = (raw_url) + ".json";
@@ -16,10 +14,38 @@ function getInventory() {
     // Begin accessing JSON data here
     var data = JSON.parse(this.response)
     console.log(data);
+    document.getElementById("runThisTown").disabled = true;
     if (request.status >= 200 && request.status < 400) {
 
-      document.getElementById("product-image").src=data.product.image.src;
+      // document.getElementById("product-image").src=data.product.image.src;
       document.getElementById("product-name").innerHTML=data.product.title;
+      document.getElementById("product-price").innerHTML="$" + data.product.variants[0].price;
+      document.getElementById("10-off-price").innerHTML="10% off: $" + (data.product.variants[0].price*.9).toFixed(2);
+      document.getElementById("15-off-price").innerHTML="15% off: $" + (data.product.variants[0].price*.85).toFixed(2);
+      document.getElementById("20-off-price").innerHTML="20% off: $" + (data.product.variants[0].price*.8).toFixed(2);
+      data.product.options.forEach(option => {
+        document.getElementById("product-options-names").textContent+=option.name+", ";
+      })
+      data.product.options.forEach(option => {
+        document.getElementById("product-options").textContent+=option.values.length+",";
+      })
+      document.getElementById("product-options-names").innerHTML=document.getElementById("product-options-names").textContent.substr(0, document.getElementById("product-options-names").textContent.length-2);
+      document.getElementById("product-options").innerHTML=document.getElementById("product-options").textContent.substr(0, document.getElementById("product-options").textContent.length-1);
+
+      i = 0;
+      data.product.images.forEach(image => {
+        i++;
+        imageSRC = document.createElement('a');
+        imageSRC.setAttribute('download', i);
+        imageSRC.setAttribute('href', image.src);
+        imageActual = document.createElement('img');
+        imageActual.classList.add("product-image");
+        imageActual.src = image.src;
+        imageSRC.appendChild(imageActual);
+
+        const imagesList = document.getElementById("results-images");
+        imagesList.appendChild(imageSRC);
+      });
 
       data.product.variants.forEach(variant => {
 
